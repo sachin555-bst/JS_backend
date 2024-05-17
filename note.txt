@@ -19,3 +19,11 @@ npm create vite@latest .  -----> to create a new project on different (js framew
 data modelling
 --> mongoose->import+make an schema+ export a model+
 
+
+*********advance js**********
+1>mongoose is used to connect the database through index.js
+
+--> while connecting to db it takes few time and also may cause error 
+so better use (try --catch) and (Async and awaits)
+2>express is used in app 
+
