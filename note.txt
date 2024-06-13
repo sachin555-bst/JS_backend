@@ -27,3 +27,8 @@ data modelling
 so better use (try --catch) and (Async and awaits)
 2>express is used in app 
 
+-------promises---------
+
+pacakages: cookie-parser , cros
+
+app.use : used during the middleware and configuration uses
