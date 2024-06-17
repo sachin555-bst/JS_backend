@@ -32,3 +32,5 @@ so better use (try --catch) and (Async and awaits)
 pacakages: cookie-parser , cros
 
 app.use : used during the middleware and configuration uses
+
+npm i mongoose-aggregate-paginate-v2
