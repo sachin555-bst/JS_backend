@@ -12,7 +12,7 @@ console.log(`\n MongoDB connected !! DB HOST:${connectionInstance.connection.hos
     process.exit(1)
 }
 }
-export default connectD
+export default connectDB
 
 
 

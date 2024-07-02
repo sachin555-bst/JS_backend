@@ -19,6 +19,12 @@ app.use(express.urlencoded({extended:true , limit:"16kbk"})) //for file format
 
 app.use(express.static("public")) // to keep some document assests in own server
 
-app.use(express.cookieParser())
+app.use(cookieParser());
+
+//routes import
+import userRouter from "./routes/user.routes.js"
+
+//routes declaration
+app.use("/api/v1/users",userRouter)
 
 export {app}

@@ -34,3 +34,5 @@ pacakages: cookie-parser , cros
 app.use : used during the middleware and configuration uses
 
 npm i mongoose-aggregate-paginate-v2
+
+cloudinary : to upload file in backend
