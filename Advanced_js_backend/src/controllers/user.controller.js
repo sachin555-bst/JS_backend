@@ -180,8 +180,8 @@ const logoutUser = asyncHandler(async (req, res) => {
       //   refreshToken: undefined,
 
       $unset: {
-        refreshToken: 1,
-      },
+        refreshToken:1
+      }
     },
     {
       new: true,
@@ -449,28 +449,33 @@ const getWatchHistory = asyncHandler(async (req, res) => {
                     fullname: 1,
                     username: 1,
                     avatar: 1,
-                  }
-                }
-              ]
-            }
+                  },
+                },
+              ],
+            },
           },
           {
-            $addFields:{
-              owner:{
-                $first:"$owner"
-              }
-            }
-          }
-        ]
-      }
-    }
+            $addFields: {
+              owner: {
+                $first: "$owner",
+              },
+            },
+          },
+        ],
+      },
+    },
   ]);
 
   return res
-  .status(200)
-  .json(new ApiResponse(200,user[0].watchHistory,"watch history feteched successfully")
-)
-})
+    .status(200)
+    .json(
+      new ApiResponse(
+        200,
+        user[0].watchHistory,
+        "watch history feteched successfully"
+      )
+    );
+});
 
 export {
   registerUser,
@@ -483,5 +488,5 @@ export {
   updateUserAvatar,
   updateUserCoverImage,
   getUserChannelProfile,
-  getWatchHistory
+  getWatchHistory,
 };
